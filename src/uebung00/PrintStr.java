@@ -1,4 +1,4 @@
-package Uebung1;
+package uebung00;
 
 public class PrintStr {
 

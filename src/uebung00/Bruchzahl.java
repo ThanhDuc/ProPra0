@@ -1,24 +1,28 @@
-package Uebung1;
+package uebung00;
 
 public class Bruchzahl {
-	int zaeler;
-	int nenner;
+	static int zaeler;
+	static int nenner;
+	double result;
 	
-	public int getZaeler() {
+	public static int getZaeler() {
 		return zaeler;
 	}
-	public void setZaeler(int zaeler) {
+	public static void setZaeler(int zaeler) {
 		this.zaeler = zaeler;
 	}
-	public int getNenner() {
+	public static int getNenner() {
 		return nenner;
 	}
-	public void setNenner(int nenner) {
+	public static void setNenner(int nenner) {
 		this.nenner = nenner;
 	}
 	
-	public double add(int z1, int n1, int z2, int n2){
-		return (z1*n2+z2*n1)/(n1*n2);
+	public static int add(int z1, int n1, int z2, int n2){
+		setZaeler(z1*n2+z2*n1);
+		setNenner(n1*n2);
+		return getZaeler() & getNenner();
+		
 				
 	}
 	
@@ -40,7 +44,7 @@ public class Bruchzahl {
 	}
 	
 	public String toString(){
-		return null ;
+		return getZaeler() + "/" + getNenner();
 	}
 	
 }

@@ -1,6 +1,6 @@
-package Uebung1;
+package uebung00;
 
-public class Test {
+public class Test extends Bruchzahl {
 	
 	int zaeler1;
 	int nenner1;
@@ -16,7 +16,7 @@ public class Test {
 		test2.setZaeler(2);
 		test2.setNenner(6);
 		
-		
+		add(test1.getZaeler(),test1.getNenner(),test2.getZaeler(),test2.getNenner());
 		
 		
 
